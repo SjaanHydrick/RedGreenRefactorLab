@@ -22,7 +22,7 @@ it('confirm original array is unchanged', () => {
 
 describe('takes an array of strings and capitalizes all strings and filters out any string that starts with the letter f', () => {
 const arr = ['hilda', 'david', 'frida', 'alfur', 'johanna']
-it('use for loop to get tests to pass', () => {
+it('uses array methods to get tests to pass', () => {
     const capArr = capitalizeAndFilter(arr);
     expect(capArr).toEqual(['HILDA', 'DAVID', 'ALFUR', 'JOHANNA']);
 })

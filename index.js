@@ -18,11 +18,8 @@ const copyAndPush = (arr, item) => {
 };
 
 const capitalizeAndFilter = arr => {
-    const newArr = [];
     const filter = arr.filter(name => !name.startsWith('f'));
-    for(i = 0; i < filter.length; i++){
-        newArr.push(filter[i].toUpperCase());
-    }
+    newArr = filter.map((name) => {return name.toUpperCase()})
     return newArr;
 }
 
