@@ -18,9 +18,7 @@ const getName = ({ name } = obj) => {
 };
 
 const copyAndPush = (arr, item) => {
-    newArr = arr.slice(0);
-    newArr.push(item);
-    return newArr;
+    return [...arr, item]
 };
 
 module.exports = {
