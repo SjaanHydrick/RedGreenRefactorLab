@@ -1,7 +1,3 @@
-// getName function - returns the name property of an object
-
-// destructure
-// destructure function parameters
 
 // copyAndPush function - returns a new array with all the items in the original array and a new item pushed to the end
 // use push to add item to array and return array
@@ -22,6 +18,14 @@ const getName = ({ name } = obj) => {
     return name;
 };
 
+const copyAndPush = (arr, item) => {
+    newArr = arr.slice(0);
+    newArr.push(item);
+    return newArr;
+
+};
+
 module.exports = {
-    getName
+    getName,
+    copyAndPush
 };
