@@ -1,6 +1,5 @@
 
 // copyAndPush function - returns a new array with all the items in the original array and a new item pushed to the end
-// use push to add item to array and return array
 // add another test that makes sure that the original array is unchanged
 // update code, use spread to copy and append
 
@@ -22,7 +21,6 @@ const copyAndPush = (arr, item) => {
     newArr = arr.slice(0);
     newArr.push(item);
     return newArr;
-
 };
 
 module.exports = {
