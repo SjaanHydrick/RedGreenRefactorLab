@@ -1,6 +1,5 @@
 // getName function - returns the name property of an object
-// bracket notation
-// dot notation
+
 // destructure
 // destructure function parameters
 
@@ -19,8 +18,7 @@
 
 
 
-const getName = (obj) => {
-    const { name } = obj;
+const getName = ({ name } = obj) => {
     return name;
 };
 
