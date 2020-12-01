@@ -18,8 +18,10 @@
 // bonus Mock
 
 
+
 const getName = (obj) => {
-    return obj.name
+    const { name } = obj;
+    return name;
 };
 
 module.exports = {
