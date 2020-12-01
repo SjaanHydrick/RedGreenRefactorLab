@@ -1,8 +1,4 @@
 
-// copyAndPush function - returns a new array with all the items in the original array and a new item pushed to the end
-// add another test that makes sure that the original array is unchanged
-// update code, use spread to copy and append
-
 // capitalizeAndFilter function - takes an array of strings capitalize all strings and filter out any string that starts with the letter f
 // use a for loop to get test to pass
 // refactor, use array methods instead of for loop
@@ -21,7 +17,17 @@ const copyAndPush = (arr, item) => {
     return [...arr, item]
 };
 
+const capitalizeAndFilter = arr => {
+    const newArr = [];
+    const filter = arr.filter(name => !name.startsWith('f'));
+    for(i = 0; i < filter.length; i++){
+        newArr.push(filter[i].toUpperCase());
+    }
+    return newArr;
+}
+
 module.exports = {
     getName,
-    copyAndPush
+    copyAndPush,
+    capitalizeAndFilter
 };

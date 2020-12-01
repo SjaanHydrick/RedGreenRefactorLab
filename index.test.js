@@ -17,5 +17,13 @@ it('use push array to add item to array and return new array and old array', () 
 });
 it('confirm original array is unchanged', () => {
     expect(numArray).toEqual([4, 8, 15, 16, 23]);
+});
+});
+
+describe('takes an array of strings and capitalizes all strings and filters out any string that starts with the letter f', () => {
+const arr = ['hilda', 'david', 'frida', 'alfur', 'johanna']
+it('use for loop to get tests to pass', () => {
+    const capArr = capitalizeAndFilter(arr);
+    expect(capArr).toEqual(['HILDA', 'DAVID', 'ALFUR', 'JOHANNA']);
 })
 })
